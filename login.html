@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(110, 105, 141); */
+            background:url(img/1622868995113.jpg)no-repeat;
+            background-size: 100%;
+        }
+        .div1{
+            width: 800px;
+            height: 607px;
+            margin: 0px auto;
+            background-size: 800;
+            position: relative;
+            margin-top: 30px;
+            border-radius: 30px;
+            border: 1px solid #f00;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .div2{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            margin-left: -110px;
+            margin-top: -34px;
+        }
+        span#span1{
+            display: block;
+            padding-left:45px ;
+            font-size: 26px;
+        }
+        input{
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+        #bt2{
+            width: 166px;
+            height: 33px;
+
+            margin-left: 42px;
+            font-size: 20px;
+        }
+		span#tips{
+		    color: #FF0000;
+			font-size: 14px;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+    </style>
+	<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#bt2").click(function(){
+				$.ajax({
+					url:"dl.php?action=login",
+					type:"POST",
+					data:{userName:$("#userName").val(),pwd:$("#pwd").val()},
+					dataType:"json",
+					success:function(data){
+						if(data.result=="success"){
+							localStorage.setItem("jwt",data.jwt);
+							location.href="admin.html";
+						}else{
+							$("#tips").text(data.message)
+						}
+					}
+				})
+			})
+			$("#userName").focus(function(){
+				
+				$("#tips").text(" ")
+			})
+			$("#pwd").focus(function(){
+				$("#tips").text(" ")
+			})
+		})
+	</script>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <span id="span1">管理员登录</span><br>
+            账号:
+            <input type="text" name="" id="userName" autocomplete="off"><br>
+            密码:
+            <input type="password" id="pwd" autocomplete="off"><span id="tips">
+            	
+            </span><br>
+			
+            <input type="button" value="登录" id="bt2">
+			<a href="index.html">首页</a>
+        </div>
+    </div>
+</body>
+</html>

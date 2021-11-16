@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    font-size: 14px/1.5em 宋体;
+	background-color:rgb(78,157,224);
+	background: url(../img/src=http___pic1.win4000.com_wallpaper_d_58e45020b31ea.jpg&refer=http___pic1.win4000.jpg);
+	background-size: 100%;
+}
+ul,a{
+	list-style: none;
+	text-decoration: none;
+}
+div.head{
+	background-color: #222;
+}
+div.head1{
+	width: 1200px;
+	height: 40px;
+	margin: 0px auto;
+	position: relative;
+}
+div.head1 .a1{
+	position: absolute;
+	left: 0;
+	color: #fff;
+	top: 30%;
+}
+div.head1 .a2{
+	position: absolute;
+	right: 0;
+	color: #fff;
+	top: 30%;
+}
+div.head1 a.a3{
+	position: absolute;
+	right: -50px;
+	color: #fff;
+	top: 30%;
+}
+div.content{
+	width: 1040px;
+	/* height: 1500px; */
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 20px;
+	/* background: url(../img/300.jpg); */
+	background-size: 1080px;
+	margin: 0px auto;
+}
+div.content1{
+	border-radius: 20px;
+	padding: 10px;
+}
+div#fabu{
+	position: fixed;
+	top: 40%;
+	left: -410px;
+	width: 500px;
+	height: 300px;
+	border: 1px solid #ccc;
+	border-radius: 0 300px 300px 0;
+	transition: left 2s;
+	overflow: hidden;
+}
+div#fabu p{
+	padding: 100px 50px 100px 0px;
+	width: 20px;
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+}
+div#fabu form{
+	padding-top: 15px;
+}
+div#fabu form img{
+	border-radius: 25px;
+}
+div#fabu input,div#fabu textarea{
+	outline: none;
+	border-radius: 15px;
+	padding-left: 10px;
+	/* background: url(../img/src=http___pic1.win4000.com_wallpaper_d_58e45020b31ea.jpg&refer=http___pic1.win4000.jpg); */
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 5px;
+}
+#content1 ul .wd_div{
+	margin-bottom: 20px;
+	width: 1040px;
+	/* background-color: #0099FF; */
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
+	padding: 4px;
+	padding-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+#content1 ul .wd_div img{
+	border-radius: 50%;
+	position: absolute;
+	left: 4px;
+	top: 23px;
+}
+.content #huanye{
+	background: rgba(255,255,255,0.8);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+.content #huanye a{
+	color: #9c9c9c;
+}
+#content1 ul .wd_div .wd_yh{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 60px;
+}
+#content1 .wd_div .spf_time{
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+	
+}
+
+#content1 .wd_div .spf_title{
+	position: absolute;
+	top: 0;
+	left: 30%;
+	background: rgba(255,255,255,0.7);
+	padding: 20px;
+	border-radius: 20px;
+}
+#content1 .wd_div .wd_nr{
+	width: 70px;
+	float: left;
+	font-size: 20px;
+}
+#content1 .wd_div .wd_nr1{
+	width: 1000px;
+	padding: 18px;
+	padding-left: 40px;
+	/* float: left; */
+}
+#content1 ul .wd_div a{
+	color: #000000;
+}
+ul p.wd_p1{
+	padding: 10px;
+	width: 1000px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 10px;
+	margin-top: -10px;
+	border-radius: 5px;
+	color: #FF0000;
+}
+#content1 ul .wd_div a.wd_sh{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}

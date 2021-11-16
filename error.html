@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            setTimeout(function(){
+                location.href="login.html"
+            },3000)
+        }
+    </script>
+    <style>
+        body {
+            background: url(img/err.jpg);
+            background-size: 100%;
+        }
+        div{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 45%;
+            left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> <em>页面出错了！</em> </h1>
+        <span>页面将在3秒后返回登录页面</span>
+    </div>
+</body>
+
+</html>
